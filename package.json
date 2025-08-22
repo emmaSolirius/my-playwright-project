@@ -1,0 +1,15 @@
+{
+  "name": "my-playwright-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Emma Wilby <emma.wilby@solirius.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.3",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "playwright": "^1.55.0",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {}
+}
