@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { chromium, Browser, Page } from 'playwright';
 
-test('test1', async ({ page }) => {
+test('Check start now button works', async ({ page }) => {
     // const browser: Browser = await chromium.launch();
     // const context = await browser.newContext();
     // const page: Page = await context.newPage();
