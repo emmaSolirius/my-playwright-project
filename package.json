@@ -12,6 +12,8 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "test": "playwright test --project chromium --headed"
+    "test": "playwright test --headed",
+    "test-chromium": "playwright test --project chromium --headed",
+    "test-firefox": "playwright test --project firefox --headed"
   }
 }
