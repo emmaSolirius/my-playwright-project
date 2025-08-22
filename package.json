@@ -11,5 +11,7 @@
     "playwright": "^1.55.0",
     "typescript": "^5.9.2"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "playwright test --project chromium --headed"
+  }
 }
