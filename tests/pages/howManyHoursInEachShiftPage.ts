@@ -1,9 +1,9 @@
 import { Page } from 'playwright';
 import {expect} from "@playwright/test";
-import numberOfDaysPage_content from '../content/numberOfDaysPage_content';
 import axeTest from '../accessibilityTestHelper';
+import howManyHoursInEachShiftPage_content from '../content/howManyHoursInEachShiftPage_content';
 
-class NumberOfDaysPage {
+class HowManyHoursInEachShiftPage {
     private readonly title: string;
     private readonly text: string;
 
@@ -16,9 +16,8 @@ class NumberOfDaysPage {
         await page.waitForSelector('h1');
         
         await Promise.all([
-            expect(page.locator(this.text)).toContainText(numberOfDaysPage_content.caption),
-            expect(page.locator(this.text)).toContainText(numberOfDaysPage_content.pageTitle),
-            expect(page.locator(this.text)).toContainText(numberOfDaysPage_content.pText1),
+            expect(page.locator(this.text)).toContainText(howManyHoursInEachShiftPage_content.caption),
+            expect(page.locator(this.text)).toContainText(howManyHoursInEachShiftPage_content.pageTitle),
         ]);
 
         await axeTest(page);
@@ -35,4 +34,4 @@ async continueOn(page: Page): Promise<void> {
     }
 }
 
-export default NumberOfDaysPage;
+export default HowManyHoursInEachShiftPage;
